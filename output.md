@@ -6,3 +6,6 @@
 
 <img width="880" height="430" alt="image" src="https://github.com/user-attachments/assets/79cfeb3a-c63e-4e05-931a-cd111785fb7e" />
 
+# Cloud watch alarm for Web-server AGS.
+
+<img width="959" height="448" alt="image" src="https://github.com/user-attachments/assets/e3387865-81c3-47e2-95e3-8294a25024a0" />
