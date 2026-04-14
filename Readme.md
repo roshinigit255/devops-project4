@@ -20,14 +20,20 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 - Create one S3 bucket for storing web-server & app-server code.
 - Upload the code to your S3 from your local system.
 - Create another S3 bucket for VPC flow logs.
+- <img width="959" height="249" alt="image" src="https://github.com/user-attachments/assets/4ee3ebb3-c430-43f8-9e0e-b49c562d5ec7" />
+
 
 ## Step 3: Create IAM Role with Policies
 - S3 read only.
 - SSM managed instance core.
+- <img width="953" height="373" alt="image" src="https://github.com/user-attachments/assets/ff9b4f99-c18f-4b0c-8d6f-1218ff91a742" />
+
 
 ## Step 4: Create VPC, Subnets, IGW, NAT-GW, RT
 - Enable auto-assign public IP for web-tier public subnets.
 - Create flow logs for VPC & use the S3 bucket created above.
+- <img width="954" height="447" alt="image" src="https://github.com/user-attachments/assets/a0946b84-9792-4a5d-a330-d8ce82c113a1" />
+
 
 ## Step 5: Create Security Groups
 1. **External-Load-Balancer-SG** --> HTTP (80): 0.0.0.0/0.
@@ -35,6 +41,8 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 3. **Internal-Load-Balancer-SG** --> HTTP --> Web-Tier-SG.
 4. **App-Tier-SG** --> Port 4000 --> Internal-LB-SG.
 5. **DB-Tier-SG** --> MySQL (3306) --> App-Tier-SG.
+-   <img width="955" height="328" alt="image" src="https://github.com/user-attachments/assets/cf172d7e-95f4-443e-a4d1-ba0d51416232" />
+
 
 ## Step 6: Create DB Subnet Group & RDS
 - Create DB subnet group.
@@ -48,6 +56,8 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 - Create target group.
 - Create internal load balancer.
 - Create autoscaling group.
+- <img width="959" height="398" alt="image" src="https://github.com/user-attachments/assets/8115ccba-f7a7-4fae-9221-61a6236e0915" />
+
 - Edit `nginx.conf` file in local system by adding Internal-LB-DNS & upload the file in S3.
 
 ## Step 8: Create Test Web Server, Install Packages (Nginx, Node.js (React)), Test Connections
@@ -57,6 +67,8 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 - Create target group.
 - Create external load balancer.
 - Create autoscaling group.
+- <img width="957" height="365" alt="image" src="https://github.com/user-attachments/assets/f850a5e0-ab41-4073-96d4-dac14d384b99" />
+
 
 ## Step 9: Add External-ALB-DNS Record in Route 53
 
