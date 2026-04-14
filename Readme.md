@@ -75,6 +75,8 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 ## Step 10: Create CloudWatch Alarms Along with SNS
 
 ## Step 11: Create CloudTrail
+- <img width="942" height="347" alt="image" src="https://github.com/user-attachments/assets/550b8dda-9a15-4851-b829-948f11133541" />
+
 
 ## Step 12: Deleting the Entire Infrastructure
 - Delete CloudFront.
