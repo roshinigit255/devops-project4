@@ -13,3 +13,7 @@
 ## VPC and subnet setup.
 
 <img width="932" height="428" alt="image" src="https://github.com/user-attachments/assets/00adbd44-8f1b-4f23-8898-6c532d4852b8" />
+
+## SNS is configured .
+<img width="937" height="385" alt="image" src="https://github.com/user-attachments/assets/529195fc-ecea-464f-9690-65fea5dfc891" />
+
